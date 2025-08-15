@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hassan/Desktop/LibraryManager/LibraryManager.csproj",
+      "projectUniqueName": "/Users/hassan/Desktop/LibraryMSdev/LibraryManager/LibraryManager.csproj",
       "projectName": "LibraryManager",
-      "projectPath": "/Users/hassan/Desktop/LibraryManager/LibraryManager.csproj",
+      "projectPath": "/Users/hassan/Desktop/LibraryMSdev/LibraryManager/LibraryManager.csproj",
       "packagesPath": "/Users/hassan/.nuget/packages/",
-      "outputPath": "/Users/hassan/Desktop/LibraryManager/obj/",
+      "outputPath": "/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hassan/.nuget/NuGet/NuGet.Config"
