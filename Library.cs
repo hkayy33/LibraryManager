@@ -60,10 +60,16 @@ public class Library
         IEnumerable<Book> allBooks =
             from b in Books
             select b;
-
+        Console.WriteLine("___Books in the Library:___");
+        string availablility = "Available";
         foreach (var books in allBooks)
         {
-            Console.WriteLine(books);
+            if (!books.IsAvailable)
+            {
+                availablility = "Not-Available";
+            }
+
+            Console.WriteLine($"{books.Title}  [{availablility}]");
         }
     }
 
@@ -72,7 +78,7 @@ public class Library
         if (!patrons.Contains(patron))
         {
             patrons.Add(patron);
-            Console.WriteLine($"Successfully added {patron.Name}");
+            Console.WriteLine($"Successfully added {patron.Name} as a patron");
         }
         else{
             Console.WriteLine("Unable to add patron");
