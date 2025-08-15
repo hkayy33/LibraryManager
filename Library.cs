@@ -10,17 +10,23 @@ public class Library
             Books.Add(book);
             Console.WriteLine($"{book.Title} has been added to the library system");
         }
-        Console.WriteLine($"{book.Title} duplicate book");
-        // assuming that there is only allowed to be one of each book
+        else
+        {
+            Console.WriteLine($"{book.Title} duplicate book");
+            // assuming that there is only allowed to be one of each book
+        }
     }
     public void RemoveBook(Book book)
     {
-         if (Books.Contains(book))
+        if (Books.Contains(book))
         {
             Books.Remove(book);
             Console.WriteLine($"{book.Title} has been Removed from the library system");
         }
-        Console.WriteLine($"{book.Title} does not exist");
+        else
+        {
+            Console.WriteLine($"{book.Title} does not exist");
+        }
     }
 
     public void GetBookByAuthor(String Author)
@@ -68,7 +74,10 @@ public class Library
             patrons.Add(patron);
             Console.WriteLine($"Successfully added {patron.Name}");
         }
-        
+        else{
+            Console.WriteLine("Unable to add patron");
+        }
+
     }
     public void RemovePatron(Patron patron)
     {
@@ -77,19 +86,44 @@ public class Library
             patrons.Remove(patron);
             Console.WriteLine($"Successfully removed {patron.Name}");
         }
+         else{
+            Console.WriteLine("Unable to remove patron");
+        }
 
     }
 
     public void BorrowBook(Patron patron, Book book)
     {
-        
-
+        // Check if the patron exists in the library system
+        if (!patrons.Contains(patron))
+        {
+            Console.WriteLine($"Patron {patron.Name} is not registered in the library system.");
+            return;
+        }
+        // Check if the book exists in the library system
+        if (!Books.Contains(book))
+        {
+            Console.WriteLine($"Book '{book.Title}' is not available in this library.");
+            return;
+        }
+        patron.Borrow(book);
     }
     public void ReturnBook(Patron patron, Book book)
     {
-        
+
+        if (!patrons.Contains(patron))
+        {
+            Console.WriteLine($"Patron {patron.Name} is not registered in the library system.");
+            return;
+        }
+        if (!Books.Contains(book))
+        {
+            Console.WriteLine($"Book '{book.Title}' does not belong to this library.");
+            return;
+        }
+        patron.ReturnBook(book);
     }
-    
+
 
 
 }
