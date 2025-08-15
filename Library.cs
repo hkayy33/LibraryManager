@@ -25,16 +25,33 @@ public class Library
 
     public void GetBookByAuthor(String Author)
     {
-        
+        IEnumerable<Book> bookAuth =
+            from b in Books
+            where b.Author == Author
+            select b;
+
+        foreach (var books in bookAuth)
+        {
+            Console.WriteLine(books);
+        }
 
     }
 
     public void GetBookByTitle(string title)
     {
+        IEnumerable<Book> booksbytitles =
+            from b in Books
+            where b.Title == title
+            select b;
 
+        foreach (var books in booksbytitles)
+        {
+            Console.WriteLine(books);
+        }
     }
     public void GetAllBooks()
     {
+
 
     }
 
