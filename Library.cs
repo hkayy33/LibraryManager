@@ -5,15 +5,27 @@ public class Library
 
     public void AddBook(Book book)
     {
-        // add a book object to the list
+        if (!Books.Contains(book))
+        {
+            Books.Add(book);
+            Console.WriteLine($"{book.Title} has been added to the library system");
+        }
+        Console.WriteLine($"{book.Title} duplicate book");
+        // assuming that there is only allowed to be one of each book
     }
     public void RemoveBook(Book book)
     {
-        
+         if (Books.Contains(book))
+        {
+            Books.Remove(book);
+            Console.WriteLine($"{book.Title} has been Removed from the library system");
+        }
+        Console.WriteLine($"{book.Title} does not exist");
     }
 
     public void GetBookByAuthor(String Author)
     {
+        
 
     }
 
