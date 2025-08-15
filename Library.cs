@@ -28,10 +28,20 @@ public class Library
 
     public void AddPatron(Patron patron)
     {
-        patrons.Add(patron);
+        if (!patrons.Contains(patron))
+        {
+            patrons.Add(patron);
+            Console.WriteLine($"Successfully added {patron.Name}");
+        }
+        
     }
     public void RemovePatron(Patron patron)
     {
+        if (patrons.Contains(patron))
+        {
+            patrons.Remove(patron);
+            Console.WriteLine($"Successfully removed {patron.Name}");
+        }
 
     }
 
