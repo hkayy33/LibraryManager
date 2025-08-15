@@ -1,7 +1,7 @@
 class Library
 {
-    List<Book> Books = [];
-    List<Patron> patrons = [];
+    public List<Book> Books = [];
+    public List<patron> patron = new List<string>();
 
     public void AddBook(Book book)
     {
@@ -28,7 +28,7 @@ class Library
 
     public void AddPatron(Patron patron)
     {
-
+        patrons.Add(patron.Name);
     }
     public void RemovePatron(Patron patron)
     {

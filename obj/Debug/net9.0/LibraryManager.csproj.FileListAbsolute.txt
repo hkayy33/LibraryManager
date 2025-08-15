@@ -1,0 +1,15 @@
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.AssemblyInfoInputs.cache
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.AssemblyInfo.cs
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.csproj.CoreCompileInputs.cache
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.sourcelink.json
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/bin/Debug/net9.0/LibraryManager
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/bin/Debug/net9.0/LibraryManager.deps.json
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/bin/Debug/net9.0/LibraryManager.runtimeconfig.json
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/bin/Debug/net9.0/LibraryManager.dll
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/bin/Debug/net9.0/LibraryManager.pdb
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.dll
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/refint/LibraryManager.dll
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.pdb
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/LibraryManager.genruntimeconfig.cache
+/Users/hassan/Desktop/LibraryMSdev/LibraryManager/obj/Debug/net9.0/ref/LibraryManager.dll
