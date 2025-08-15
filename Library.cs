@@ -51,8 +51,14 @@ public class Library
     }
     public void GetAllBooks()
     {
+        IEnumerable<Book> allBooks =
+            from b in Books
+            select b;
 
-
+        foreach (var books in allBooks)
+        {
+            Console.WriteLine(books);
+        }
     }
 
     public void AddPatron(Patron patron)
@@ -76,6 +82,7 @@ public class Library
 
     public void BorrowBook(Patron patron, Book book)
     {
+        
 
     }
     public void ReturnBook(Patron patron, Book book)
